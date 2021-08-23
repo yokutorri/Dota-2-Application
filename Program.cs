@@ -1,20 +1,23 @@
-﻿using Dota_2_Console_App.Requests;
-using Dota_2_Console_App.Utils;
+﻿using Dota_2_Application.Requests;
+using Dota_2_Application.Utils;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading;
 
-namespace Dota_2_Console_App
+namespace Dota_2_Application
 {
     class Program
     {
         public static List<PlayerDisplay> PlayerDisplays { get; private set; }
-
+        private static bool _listnerOn;
         static void Main(string[] args)
         {
             int[] colors = new int[10] { 10, 10, 10, 10, 10, 4, 4, 4, 4, 4 };
+
+            Thread listner = new Thread(EventListnerWork);
+            listner.Start();
 
             Console.BufferHeight = 120;
             Console.BufferWidth = 700;
@@ -64,6 +67,23 @@ namespace Dota_2_Console_App
                     PlayerDisplays[i].Update("");
             }
         }
+        static void EventListnerWork()
+        {
+            _listnerOn = true;
+            int height = Console.WindowHeight;
+            int width = Console.WindowWidth;
+            while (_listnerOn)
+            {
+                if (height != Console.WindowHeight || width != Console.WindowWidth)
+                {
+                    height = Console.WindowHeight;
+                    width = Console.WindowWidth;
+                    Console.BufferHeight = 120;
+                    Console.BufferWidth = 700;
+                }
 
+                Thread.Sleep(10);
+            }
+        }
     }
 }

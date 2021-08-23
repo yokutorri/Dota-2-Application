@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Text;
 
-namespace Dota_2_Console_App.Requests
+namespace Dota_2_Application.Requests
 {
     public class Connection
     {

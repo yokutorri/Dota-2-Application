@@ -1,11 +1,11 @@
-﻿using Dota_2_Console_App.Requests;
+﻿using Dota_2_Application.Requests;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace Dota_2_Console_App.Utils
+namespace Dota_2_Application.Utils
 {
     public static class StartUpUtils
     {

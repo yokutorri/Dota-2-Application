@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Dota_2_Console_App.Enums
+namespace Dota_2_Application.Enums
 {
     public enum Rank
     {   

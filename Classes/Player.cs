@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Dota_2_Console_App.Classes
+namespace Dota_2_Application.Classes
 {
     public class Player
     {

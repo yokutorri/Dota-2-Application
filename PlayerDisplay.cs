@@ -1,14 +1,14 @@
-﻿using Dota_2_Console_App.Classes;
-using Dota_2_Console_App.Enums;
-using Dota_2_Console_App.Requests;
-using Dota_2_Console_App.Utils;
+﻿using Dota_2_Application.Classes;
+using Dota_2_Application.Enums;
+using Dota_2_Application.Requests;
+using Dota_2_Application.Utils;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Dota_2_Console_App
+namespace Dota_2_Application
 {
     public class PlayerDisplay
     {

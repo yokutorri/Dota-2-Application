@@ -4,10 +4,10 @@ using System.Text;
 using System.IO;
 using System.Threading;
 using Newtonsoft.Json;
-using Dota_2_Console_App.Classes;
+using Dota_2_Application.Classes;
 using System.Linq;
 
-namespace Dota_2_Console_App.Requests
+namespace Dota_2_Application.Requests
 {
     public static class OpenDotaAPI
     {

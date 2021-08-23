@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Dota_2_Console_App.Utils
+namespace Dota_2_Application.Utils
 {
     static class StringUtils
     {
