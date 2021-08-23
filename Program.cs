@@ -14,8 +14,6 @@ namespace Dota_2_Application
         private static bool _listnerOn;
         static void Main(string[] args)
         {
-            int[] colors = new int[10] { 10, 10, 10, 10, 10, 4, 4, 4, 4, 4 };
-
             Thread listner = new Thread(EventListnerWork);
             listner.Start();
 
@@ -45,13 +43,12 @@ namespace Dota_2_Application
                 Console.WriteLine(" # |         ID |         Name |         Rank |     WR |  AK |  AD |  AK |  KDA |  XPM |  GPM |    AHD |   ATD |   AHH |  ALH | Heroes\n");
                 for (int i = 0; i < 10; i++)
                 {
-                    Console.ForegroundColor = (ConsoleColor)colors[i];
+                    Console.ForegroundColor = (i < 5) ? (ConsoleColor)10 : (ConsoleColor)4;
                     Console.Write($"{i + 1,2} |");
                     Console.ForegroundColor = ConsoleColor.White;
                     Console.WriteLine(PlayerDisplays[i].Data.WriteData());
                     if (i == 4)
                         Console.WriteLine();
-
                 }
                 Console.WriteLine("\nPress enter for receive data or input exit...");
             }
