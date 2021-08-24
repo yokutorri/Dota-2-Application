@@ -52,6 +52,8 @@ namespace Dota_2_Application
                 }
                 Console.WriteLine("\nPress enter for receive data or input exit...");
             }
+            _listnerOn = false;
+            listner.Join();
         }
         private static void RetrieveData()
         {
