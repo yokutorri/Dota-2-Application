@@ -15,6 +15,4 @@ TODO:
 - [ ] Configuration system for more flexible customization.
 - [ ] Smth not important...
 
-Version: 0.2. 
-
 ![image](https://user-images.githubusercontent.com/60080559/130422421-1cf09989-ef2c-47b7-ad6d-9f246b121452.png)
