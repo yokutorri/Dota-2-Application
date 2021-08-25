@@ -46,9 +46,12 @@ namespace Dota_2_Application
                     Console.ForegroundColor = (i < 5) ? (ConsoleColor)10 : (ConsoleColor)4;
                     Console.Write($"{i + 1,2} |");
                     Console.ForegroundColor = ConsoleColor.White;
+                    if (PlayerDisplays[i].Data.Rank == null)
+                        Console.ForegroundColor = ConsoleColor.DarkGray;
                     Console.WriteLine(PlayerDisplays[i].Data.WriteData());
                     if (i == 4)
                         Console.WriteLine();
+                    Console.ForegroundColor = ConsoleColor.White;
                 }
                 Console.WriteLine("\nPress enter for receive data or input exit...");
             }

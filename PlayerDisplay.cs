@@ -72,7 +72,7 @@ namespace Dota_2_Application
                     return $" {ID,10} | {Name,12} | {Rank,12} | {Winrate,5}% | {AverageKills,3} | {AverageDeaths,3} | {AverageAssists,3} | {AverageKDA,4} | {AverageXPM,4} | {AverageGPM,4} | {AverageHeroDamage,6} | {AverageTowerDamage,5} | {AverageHeroHealing,5} | {AverageLastHits,4} |" + heroes;
                 }
                 else
-                    return " Anonymous  |            ? |            ? |      ? |   ? |   ? |   ? |    ? |    ? |    ? |      ? |     ? |     ? |    ? |";
+                    return $" {ID,10} |    Anonymous |            ? |      ? |   ? |   ? |   ? |    ? |    ? |    ? |      ? |     ? |     ? |    ? |";
             }
 
             public void ConsumeData(string id, Player playerData, Match[] recentMatches)
