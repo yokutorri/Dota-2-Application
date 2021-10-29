@@ -10,9 +10,4 @@ Open file, after you should add path to dota 2 beta. Example: *D:\\SteamLibrary\
 
 When you are on draft stage, open this application, and follow the instructions on the console.
 
-TODO:
-- [x] Beta release.
-- [ ] Configuration system for more flexible customization.
-- [ ] Smth not important...
-
 ![image](https://user-images.githubusercontent.com/60080559/130422421-1cf09989-ef2c-47b7-ad6d-9f246b121452.png)
