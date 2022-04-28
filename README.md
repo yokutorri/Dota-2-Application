@@ -1,6 +1,6 @@
 # Dota-2-Application
 
-Low resource console application, analogue of the overwolf program. Showing last 20 heroes of players in your game and other stats, by using OpenDotaAPI.
+Low resource usage console application, analogue of the overwolf program. Showing last 20 heroes of players in your game and other stats, by using OpenDotaAPI.
 Not working with players which disable "Expose Public Match Data".
 
 This 100% safety, because application not working with game memory or smth for what you can be banned.
